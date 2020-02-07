@@ -12,8 +12,10 @@ def find_vac_salary(min_salary, currency='руб'):
     return vacancies.find({'min': {'$gte':min_salary}, 'cur': currency})
 
 #  варианты валют 'руб', 'EUR', 'USD', 'KZT'
-vacs = find_vac_salary(2450, 'EUR')
+vacs = find_vac_salary(200000, 'руб')
+
 
 for vac in vacs:
     print(vac)
 
+print("Количество вакансий:", vacs.count())

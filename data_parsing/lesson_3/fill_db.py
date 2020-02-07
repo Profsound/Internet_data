@@ -1,5 +1,5 @@
 from pymongo import MongoClient
-from lesson_two import hh_parser
+from data_parsing.lesson_2 import hh_parser
 
 # Развернуть у себя на компьютере/виртуальной машине/хостинге MongoDB и
 # реализовать функцию, записывающую собранные вакансии в созданную БД
@@ -16,8 +16,8 @@ def parse_and_fill(vacname, code):
     # 1624 - Татарстан
 
     data_to_db = hh_parser.get_vacancies(vacname, code)
-    print('Найдено %s вакансий по запросу: %s' %(len(data_to_db)), vacname)
+    print('Найдено %s вакансий по запросу: %s' %(str(len(data_to_db)), vacname))
     vacancies.insert_many(data_to_db)
 
 # Распарсим и зальем данные в БД mongo
-parse_and_fill('java прогаммист', 1624)
+parse_and_fill('python прогаммист', 2)
