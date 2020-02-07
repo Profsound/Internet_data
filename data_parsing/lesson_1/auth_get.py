@@ -1,4 +1,4 @@
-import lesson_one.local as l
+import data_parsing.lesson_1.local as l
 import requests as req
 
 # Выполнить запрос методом GET к ресурсам,
@@ -18,7 +18,7 @@ def get_user_by_email(email):
     r = req.get(req_url, params=params)
     return r.text
 
-print(get_user_by_email('anna@gmail.com'))
+print(get_user_by_email('alex@gmail.com'))
 
 # Результат должен быть таким:
 # jsonFlickrApi({"user":{"id":"90476509@N00","nsid":"90476509@N00",
