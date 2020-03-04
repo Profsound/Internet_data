@@ -17,6 +17,5 @@ def get_repositories(username):
 
 print(get_repositories('davisking'))
 print(get_repositories('e-fominov'))
-print(get_repositories('Profsound'))
 
 

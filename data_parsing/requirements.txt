@@ -2,3 +2,5 @@ requests
 lxml
 bs4
 pymongo
+pymorphy2
+selenium
