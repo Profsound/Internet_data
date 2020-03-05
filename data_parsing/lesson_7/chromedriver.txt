@@ -1,0 +1,2 @@
+Здесь должен быть еще chromedriver.exe, соответствующий той версии Google Chrome, установленного на компьютере.
+Скачать можно по ссылке https://chromedriver.chromium.org/downloads
